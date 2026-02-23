@@ -1,0 +1,361 @@
+/* Seven Fortunas Landing Page Styles */
+/* Placeholder branding - will be replaced with real Seven Fortunas branding */
+
+:root {
+    --primary: #1E3A8A;      /* Deep Blue */
+    --secondary: #10B981;     /* Emerald Green */
+    --accent: #F59E0B;        /* Amber */
+    --neutral-light: #F9FAFB;
+    --neutral-medium: #6B7280;
+    --neutral-dark: #111827;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #111827;
+    background: #F9FAFB;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.hero .tagline {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.hero .subtitle {
+    font-size: 1.125rem;
+    max-width: 600px;
+    opacity: 0.85;
+}
+
+/* Container and Sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.section p {
+    font-size: 1.125rem;
+    color: var(--neutral-medium);
+    line-height: 1.8;
+}
+
+/* Features Grid */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.feature p {
+    color: var(--neutral-medium);
+}
+
+/* Dashboard Links */
+.dashboards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid var(--neutral-light);
+    text-decoration: none;
+    color: var(--neutral-dark);
+    transition: border-color 0.2s, transform 0.2s;
+    display: block;
+}
+
+.dashboard-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.dashboard-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.dashboard-card p {
+    color: var(--neutral-medium);
+    font-size: 1rem;
+}
+
+.dashboard-card .status {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.dashboard-card .status.live {
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+.dashboard-card .status.coming-soon {
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+/* Team Section */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.team-member h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.team-member .role {
+    color: var(--neutral-medium);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.contact-info a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Notice Box */
+.notice {
+    background: #FEF3C7;
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: 4px;
+}
+
+.notice strong {
+    color: var(--neutral-dark);
+}
+
+/* Progress List */
+ul.progress-list {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    color: var(--neutral-medium);
+}
+
+ul.progress-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background: var(--neutral-dark);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+footer p {
+    opacity: 0.7;
+}
+
+footer a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .tagline {
+        font-size: 1.25rem;
+    }
+
+    .hero .subtitle {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 3rem 1.5rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboards {
+        grid-template-columns: 1fr;
+    }
+
+    .team {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile - 375px and below */
+@media (max-width: 375px) {
+    .hero {
+        padding: 3rem 1rem;
+        min-height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .tagline {
+        font-size: 1.125rem;
+    }
+
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .section {
+        margin-bottom: 3rem;
+    }
+
+    .section h2 {
+        font-size: 1.75rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .feature {
+        padding: 1.5rem;
+    }
+
+    .dashboard-card {
+        padding: 1.25rem;
+    }
+}
+
+/* Extra small - 320px */
+@media (max-width: 320px) {
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero .tagline {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature h3,
+    .dashboard-card h3 {
+        font-size: 1.125rem;
+    }
+}
