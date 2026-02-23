@@ -5,136 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Seven Fortunas - AI-Native Enterprise Infrastructure for Digital Inclusion">
     <title>Seven Fortunas - AI-Native Enterprise Infrastructure</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: #111827;
-            background: #F9FAFB;
-        }
-        
-        /* Placeholder branding - will be replaced with real Seven Fortunas branding */
-        :root {
-            --primary: #1E3A8A;      /* Deep Blue */
-            --secondary: #10B981;     /* Emerald Green */
-            --accent: #F59E0B;        /* Amber */
-            --neutral-light: #F9FAFB;
-            --neutral-medium: #6B7280;
-            --neutral-dark: #111827;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            padding: 6rem 2rem;
-            text-align: center;
-            min-height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .hero h1 {
-            font-size: 4rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            letter-spacing: -0.02em;
-        }
-        
-        .hero .tagline {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-        }
-        
-        .hero .subtitle {
-            font-size: 1.125rem;
-            max-width: 600px;
-            opacity: 0.85;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-        
-        .section {
-            margin-bottom: 4rem;
-        }
-        
-        .section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary);
-        }
-        
-        .section p {
-            font-size: 1.125rem;
-            color: var(--neutral-medium);
-            line-height: 1.8;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .feature {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        
-        .feature h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-        
-        .feature p {
-            color: var(--neutral-medium);
-        }
-        
-        .notice {
-            background: #FEF3C7;
-            border-left: 4px solid var(--accent);
-            padding: 1rem 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-        
-        footer {
-            background: var(--neutral-dark);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-        
-        footer p {
-            opacity: 0.7;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            .hero .tagline {
-                font-size: 1.25rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="hero">
@@ -142,17 +13,55 @@
         <p class="tagline">AI-Native Enterprise Infrastructure for Digital Inclusion</p>
         <p class="subtitle">Building the future of AI-powered operations, knowledge management, and intelligence platforms</p>
     </div>
-    
+
     <div class="container">
         <div class="notice">
             <strong>⚠️ Note:</strong> This website is using placeholder branding. Real Seven Fortunas branding will be applied during MVP Week (Days 1-3).
         </div>
-        
+
         <div class="section">
             <h2>Our Mission</h2>
             <p>Seven Fortunas is pioneering AI-native enterprise infrastructure that enables organizations to operate at AI speed. We're building comprehensive solutions for digital inclusion, starting with education and financial services for marginalized communities.</p>
         </div>
-        
+
+        <!-- Dashboard Links Section -->
+        <div class="section">
+            <h2>🔗 Dashboards & Platforms</h2>
+            <p>Explore our live intelligence dashboards and platforms:</p>
+            <div class="dashboards">
+                <a href="https://seven-fortunas.github.io/dashboards/ai/" class="dashboard-card">
+                    <h3>🤖 AI Advancements</h3>
+                    <p>Latest developments in artificial intelligence, updated daily from leading sources.</p>
+                    <span class="status live">Live</span>
+                </a>
+                <a href="https://seven-fortunas.github.io/dashboards/fintech/" class="dashboard-card">
+                    <h3>💰 FinTech & DeFi</h3>
+                    <p>Financial technology innovations, regulations, and market trends.</p>
+                    <span class="status coming-soon">Coming Soon</span>
+                </a>
+                <a href="https://seven-fortunas.github.io/dashboards/edutech/" class="dashboard-card">
+                    <h3>📚 EduTech</h3>
+                    <p>Educational technology trends, policies, and innovations.</p>
+                    <span class="status coming-soon">Coming Soon</span>
+                </a>
+                <a href="https://seven-fortunas.github.io/dashboards/security/" class="dashboard-card">
+                    <h3>🔒 Security & Compliance</h3>
+                    <p>Cybersecurity threats, vulnerabilities, and compliance updates.</p>
+                    <span class="status coming-soon">Coming Soon</span>
+                </a>
+                <a href="https://seven-fortunas.github.io/dashboards/opportunities/" class="dashboard-card">
+                    <h3>💡 Opportunities</h3>
+                    <p>RFPs, grants, partnerships, and strategic opportunities.</p>
+                    <span class="status coming-soon">Coming Soon</span>
+                </a>
+                <a href="https://github.com/Seven-Fortunas" class="dashboard-card">
+                    <h3>📦 GitHub Organization</h3>
+                    <p>View our open-source infrastructure, tools, and documentation.</p>
+                    <span class="status live">Live</span>
+                </a>
+            </div>
+        </div>
+
         <div class="section">
             <h2>What We're Building</h2>
             <div class="features">
@@ -182,24 +91,63 @@
                 </div>
             </div>
         </div>
-        
+
+        <!-- About/Team Section -->
         <div class="section">
-            <h2>Status: MVP Week</h2>
-            <p>We're currently in Day 0 of our 5-day MVP sprint, building the foundation for an AI-native enterprise. This website, along with our entire GitHub infrastructure, is being created using a combination of autonomous AI agents and the BMAD (Business Method for AI Development) methodology.</p>
+            <h2>About the Team</h2>
+            <p>Seven Fortunas is built by a distributed team of AI-native entrepreneurs, engineers, and domain experts committed to digital inclusion and AI-powered impact.</p>
+            <div class="team">
+                <div class="team-member">
+                    <h3>Jorge</h3>
+                    <p class="role">Founder & CEO</p>
+                    <p>AI-native infrastructure architect with expertise in autonomous systems and enterprise operations.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Henry</h3>
+                    <p class="role">Brand & Design</p>
+                    <p>Brand strategist and visual designer creating the Seven Fortunas identity and user experience.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Our AI Agents</h3>
+                    <p class="role">Infrastructure Team</p>
+                    <p>Claude Sonnet 4.5 agents handling 60-70% of development, testing, and deployment tasks.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <p><strong>GitHub:</strong> <a href="https://github.com/Seven-Fortunas" target="_blank">github.com/Seven-Fortunas</a></p>
+                <p><strong>Questions?</strong> Open an issue in our <a href="https://github.com/Seven-Fortunas/seven-fortunas-brain" target="_blank">seven-fortunas-brain</a> repository.</p>
+                <p><strong>Partnerships:</strong> We're open to collaboration with organizations focused on digital inclusion, education, and financial access.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Status: Phase 1.5 - Frontend Implementation</h2>
+            <p>We're currently completing the user-facing implementations for our AI-native enterprise infrastructure. This website and our dashboards are being created using autonomous AI agents and the BMAD (Business Method for AI Development) methodology.</p>
             <p style="margin-top: 1rem;"><strong>Progress:</strong></p>
-            <ul style="margin-left: 2rem; margin-top: 0.5rem; color: var(--neutral-medium);">
+            <ul class="progress-list">
                 <li>✅ GitHub organizations created</li>
                 <li>✅ Core repositories initialized</li>
-                <li>🔄 BMAD library deployment (in progress)</li>
-                <li>⏳ Custom skills creation (upcoming)</li>
-                <li>⏳ Real branding application (Days 1-3)</li>
+                <li>✅ AI Dashboard React UI deployed</li>
+                <li>✅ Company landing page live</li>
+                <li>🔄 Additional dashboards (in progress)</li>
+                <li>🔄 Second Brain search interface (in progress)</li>
+                <li>⏳ Real branding application (upcoming)</li>
             </ul>
         </div>
     </div>
-    
+
     <footer>
         <p>&copy; 2026 Seven Fortunas. Built with AI, designed for impact.</p>
         <p style="margin-top: 0.5rem; font-size: 0.875rem;">Placeholder branding - Real Seven Fortunas identity coming soon!</p>
+        <p style="margin-top: 1rem; font-size: 0.875rem;">
+            <a href="https://github.com/Seven-Fortunas">GitHub</a> •
+            <a href="https://seven-fortunas.github.io/dashboards/ai/">AI Dashboard</a>
+        </p>
     </footer>
 </body>
 </html>
