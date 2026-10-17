@@ -1,39 +1,9 @@
 # seven-fortunas.github.io
 
-## Purpose
+The page at [seven-fortunas.github.io](https://seven-fortunas.github.io/). It points visitors to [sevenfortunas.com](https://sevenfortunas.com/) and to where everything else lives: becoming a 7fchain miner, the network explorer, the papers, Discussions, the AI Advancements dashboard and our repositories.
 
-Public landing page and documentation site for Seven Fortunas, showcasing our AI-native infrastructure and capabilities.
-
-## Setup
-
-```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-## Usage
-
-Visit https://seven-fortunas.github.io to view the live site.
-
-Development:
-- Edit pages in `src/`
-- Preview locally with `npm run dev`
-- Deploy via GitHub Pages (automatic on push to main)
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines (if public repo).
+It's a single self-contained `index.html` with no build step. GitHub Pages serves it from `main`, so a change is live a minute or two after it merges.
 
 ## License
 
-See [LICENSE](LICENSE) for license information.
-
----
-
-**Seven Fortunas** - AI-Native Infrastructure for Autonomous Business Operations
+See [LICENSE](LICENSE).
